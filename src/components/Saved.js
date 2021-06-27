@@ -84,7 +84,7 @@ function LeftContainer({ savedItem, removeSavedItem, addCartItem }) {
   return (
     <Paper>
       <div style={{ padding: "10px", borderBottom: "1px solid #B8B8B8" }}>
-        <Typography variant="h6">My Cart (3)</Typography>
+        <Typography variant="h6">My Cart ({savedItem.length})</Typography>
       </div>
       {savedItem?.map((item) => (
         <CartItem
